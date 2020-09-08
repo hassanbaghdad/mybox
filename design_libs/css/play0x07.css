@@ -1,0 +1,76 @@
+.seasons
+{
+    list-style: none;
+}
+.seasons li
+{
+    float: left;
+    margin: auto;
+    background-color: #c22026;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.season
+{
+    width: 100px;
+    height: 30px;
+}
+.myellipses
+{
+    margin: auto;
+    padding: 10px;
+    height: 500px;
+    background-color: #161b19;
+}
+
+.ellipses-season ul
+{
+   display: block;
+list-style: none;
+}
+
+.ellipses-season ul li 
+{
+    float: left;
+    background-color: #363d36;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+.ellipses-season ul li:hover
+{
+    background-color: indianred;
+}
+
+.ellipses-season1
+{
+    display: block;
+}
+
+.ellipses-season2
+{
+    display: none;
+}
+.ellipses-season3
+{
+    display: none;
+}
+.ellipses-season4
+{
+    display: none;
+}
+.ellipses-season5
+{
+    display: none;
+}
+
+

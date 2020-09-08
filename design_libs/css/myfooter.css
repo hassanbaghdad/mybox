@@ -1,0 +1,95 @@
+
+#myfooter
+{
+    position: sticky;
+    height: 60px !important;
+    width: 100%;
+    background-color: #0b0c10 !important;
+    border-top: 5px solid #d81938;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+   
+}
+.box-footer
+{
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+margin: auto;
+margin-right: 10px;
+margin-top: 20px;
+margin: 0px;
+display: inline-block;
+border-radius: 50%;
+
+background-color: #ffffff;
+
+}
+.box-footer:hover .a-icon{
+    color: white;
+}
+.box-footer:hover
+{
+    background-color: #ef183a;
+    
+    transform: scale(1.1);
+    transition: linear .3s;
+}
+.box-footer a 
+{
+    text-decoration-line: none;
+    color:#226dc0;
+}
+
+
+
+
+
+#mybox-footer
+{
+ 
+    font-family: myBoxFont;
+    font-size: 25px;
+ 
+ 
+ margin: auto;
+ margin-top: -15px;
+}
+#social-icons
+{
+
+    height: 50px;
+    width: 200px;
+  
+    
+     margin: auto;
+     margin-top: 5px;
+}
+
+.z
+{
+  display: inline-block;
+  
+}
+.contact-us
+{
+    margin: auto;
+  
+    margin: auto;
+}
+@media only screen and (max-width: 600px)
+{
+
+    #myfooter
+    {
+height: 180px !important;
+    }
+
+    #mybox-footer
+{
+
+}
+
+
+}

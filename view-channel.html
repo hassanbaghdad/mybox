@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MYBOX</title>
+        <!--------------------------------  CSS  ------------------------------------------->
+        <link rel="stylesheet" href="design_libs/bootstrap441/css/bootstrap.min.css">
+        <link rel="stylesheet" href="design_libs/fontawesome5.13.0/css/all.css">
+        <link rel="stylesheet" href="design_libs/css/navbar-mybox2.css">
+       <link rel="stylesheet" href="design_libs/swiper/swiper.min.css">
+      <link rel="stylesheet" href="design_libs/swiper/style.css">
+        <link rel="stylesheet" href="design_libs/css/edits.css">
+        <link rel="stylesheet" href="design_libs/css/player-video.css">
+        <link rel="stylesheet" href="design_libs/css/social-media-buttons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="design_libs/css/load0x07page.css">
+        <link rel="stylesheet" href="design_libs/css/films-style.css">
+        <link rel="stylesheet" href="design_libs/owl/dist/assets/owl.carousel.min.css" />
+         <link rel="stylesheet" href="design_libs/placeholder-loading/dist/css/placeholder-loading.css">
+         <link rel="stylesheet" href="design_libs/css/sub-view.css">
+         <link rel="stylesheet" href="design_libs/css/myfooter.css">
+         <link rel="stylesheet" href="design_libs/css/shine-btn.css">
+         <link rel="stylesheet" href="design_libs/css/stylesforview.css">
+        <!-------------------------------  SCRIPTS  ---------------------------------------->
+        <script src="design_libs/jquery-3.4.1.min.js"></script>
+        <script src="design_libs/bootstrap441/js/bootstrap.min.js"></script>
+        <script src="design_libs/js/navbar-mybox2.js"></script>
+        <script src="design_libs/js/player-video.js"></script>
+       <script src="design_libs/js/load0x07.js"></script>
+       <script src="design_libs/js/owl.js"></script>
+       <script id="owl-screen" src="design_libs/owl/dist/owl.carousel-0x07-3.js"></script>
+     <script src="design_libs/js/films-types-filter.js"></script>
+     <script src="design_libs/js/end.js"></script>
+      
+      
+         <!-- NAVBAR MYBOX2 -->
+         
+         <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+      
+            <a class="navbar-brand navbar-logo" href="#">
+                <div id="mybox">
+                    <a href="#">
+                        MYBOX
+                    </a>
+                </div>
+            </a>
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+            </button>
+             
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <div id="container-search">
+                    <button class="btn btn-search my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                      <input id="searchbox" class="mr-sm-2 box-search dropdown-toggle"  type="search" placeholder="بحث" aria-label="Search"  onkeydown="resultsearch()">
+                      <script>
+                          function resultsearch()
+              {
+               var search_box = document.getElementById('searchbox');
+             var search_dropdown = document.getElementById('searchdrowpdown');
+               if(search_box.text  != '')
+               {
+                 
+               search_dropdown.style.display="block";
+                
+               }
+               var key = event.keyCode || event.charCode;
+             
+                 if( key == 8 || key == 46 && search_box.text =='')
+                
+                {
+                 search_dropdown.style.display="none";
+                }
+               
+               
+              }
+                        </script>
+                         <div id="searchdrowpdown">
+                             <ul>
+                               <li>
+                                 <div class="div-img-in-search-dropdown myinline">
+                                   <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                 </div>
+                               <div class="search-dropdown-title myinline">
+                                 <a href="#" >LA CASA DE PAPEL</a>
+                               </div>
+                             <div class="search-dropdown-eva myinline">
+                                 <span>8/10</span>
+                             </div>
+                                </li>
+                                <li>
+                                 <div class="div-img-in-search-dropdown myinline">
+                                   <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                 </div>
+                               <div class="search-dropdown-title myinline">
+                                 <a href="#" >LA CASA DE PAPEL</a>
+                               </div>
+                             <div class="search-dropdown-eva myinline">
+                                 <span>8/10</span>
+                             </div>
+                                </li>
+                                <li>
+                                  <div class="div-img-in-search-dropdown myinline">
+                                    <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                  </div>
+                                <div class="search-dropdown-title myinline">
+                                  <a href="#" >LA CASA DE PAPEL</a>
+                                </div>
+                              <div class="search-dropdown-eva myinline">
+                                  <span>8/10</span>
+                              </div>
+                                 </li>
+                                 <li>
+                                  <div class="div-img-in-search-dropdown myinline">
+                                    <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                  </div>
+                                <div class="search-dropdown-title myinline">
+                                  <a href="#" >LA CASA DE PAPEL</a>
+                                </div>
+                              <div class="search-dropdown-eva myinline">
+                                  <span>8/10</span>
+                              </div>
+                                 </li>
+                                 <li>
+                                  <div class="div-img-in-search-dropdown myinline">
+                                    <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                  </div>
+                                <div class="search-dropdown-title myinline">
+                                  <a href="#" >LA CASA DE PAPEL</a>
+                                </div>
+                              <div class="search-dropdown-eva myinline">
+                                  <span>8/10</span>
+                              </div>
+                                 </li>
+                                  <li>
+                                 <div class="div-img-in-search-dropdown myinline">
+                                   <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                 </div>
+                               <div class="search-dropdown-title myinline">
+                                 <a href="#" >LA CASA DE PAPEL</a>
+                               </div>
+                             <div class="search-dropdown-eva myinline">
+                                 <span>8/10</span>
+                             </div>
+                                </li>
+                                        
+                                    
+                               </ul>
+                             
+                             
+                         </div>
+                  </div> 
+          
+                  <ul class="navbar-nav ml-auto">
+                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">الصفحة الرئيسية<i class="fas fa-home"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="films.html">الافلام<i class="fas fa-film"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="series.html">المسلسلات<i class="fas fa-moon"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="channels.html">القنوات<i class="fas fa-tv"></i></a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">المزيد<i class="fas fa-box-open"></i></a>
+                    </li>
+                   
+                   
+                    
+                </ul>
+               
+            </div>
+           
+        </nav>
+        <!-- END NAVBAR -->
+    </head>
+<body>
+    <main class="content">
+        <div class="single">
+    
+          <section class="trailer" >
+            <h3>القناة</h3>
+            <div class="trailer_frame">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZXdPhfMbAw" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </section>
+    
+         
+         
+
+        </div>
+          
+    
+          <section class="comments" >
+            <h3 class="mt" style="margin: auto;text-align: center;width:100%;">قنوات ذات صلة</h3>
+               
+            <div style="margin: auto;padding-right: 50px;padding-left: 50px;">
+       
+            </div>
+
+         </section>
+    
+         
+      </main>
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 300px !important;
+        margin-top: -50px !important;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+  
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    </style>
+  
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div id="myarrowbtns">
+            <div style="position: relative;">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+           
+        </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="cont">
+                <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+            </div>    
+        </div>
+        <div class="swiper-slide">
+            <div class="cont">
+                <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+            </div>    
+        </div>
+        <div class="swiper-slide">
+            <div class="cont">
+                <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+            </div>    
+        </div>
+        <div class="swiper-slide">
+            <div class="cont">
+                <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+            </div>    
+        </div>
+        <div class="swiper-slide">
+            <div class="cont">
+                <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+            </div>    
+        </div>
+        <div class="swiper-slide">
+            <div class="cont">
+                <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+            </div>    
+        </div>
+        <div class="swiper-slide">
+            <div class="cont">
+                <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+            </div>    
+        </div>
+        <div class="swiper-slide">
+            <div class="cont">
+                <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+            </div>    
+        </div>
+        
+      </div>
+      
+    </div>
+  
+    <!-- Swiper JS -->
+    <script src="design_libs/swiper/swiper.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+        var mywidth = $(window).width();
+    var myitems = 0;
+    if(mywidth > 1200)
+  {
+    myitems = 5;
+  }
+  if(mywidth >  1200 && mywidth < 1400)
+  {
+    myitems =4;
+  }
+  if(mywidth <  1000 && mywidth > 800)
+  {
+  myitems=3;
+  }
+  if(mywidth < 800 && mywidth > 600)
+  {
+  myitems=2;
+  }
+  if(mywidth <  600 )
+  {
+   myitems=1;
+  }
+  var swiper = new Swiper('.swiper-container', {
+        slidesPerView: myitems,
+        spaceBetween: 120,
+        slidesPerGroup: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+  
+  
+      $(window).on("resize",function(){
+        var mywidth = $(window).width();
+       
+        if(mywidth > 1200)
+  {
+    myitems = 5;
+  }
+  if(mywidth >  1200 && mywidth < 1400)
+  {
+    myitems =4;
+  }
+  if(mywidth <  1000 && mywidth > 800)
+  {
+  myitems=3;
+  }
+  if(mywidth < 800 && mywidth > 600)
+  {
+  myitems=2;
+  }
+  if(mywidth <  600 )
+  {
+   myitems=1;
+  }
+  var swiper = new Swiper('.swiper-container', {
+        slidesPerView: myitems,
+        spaceBetween: 120,
+        slidesPerGroup: 1,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+  
+  });
+  
+      
+   </script>
+      <footer>
+        <div id="myfooter" style="margin-bottom: 0px;">
+            <div class="col-xl-3 z">
+                <div class=" z contact-us">
+                    <h2  >    تواصل معنا        </h2>
+                   </div>
+            </div>
+             
+          <div class="col-xl-3 z">
+            <div>
+                    
+                <span id="mybox-footer" >MYBOX</span>
+           
+      
+    </a>
+    </div>
+          </div>
+                
+          <div class="col-xl-3  z">
+            <div id="social-icons">
+                <div class="box-footer">
+                    <a class="a-icon" href="#"><span class="fa fa-facebook"></span></a> 
+                 </div>
+                 <div class="box-footer">
+                     <a class="a-icon" href="#"><span class="fa fa-instagram"></span></a>
+                 </div>
+                 <div class="box-footer" style="margin-bottom: 20px;">
+                     <a class="a-icon" href="#"><span class="fa fa-twitter"></span></a>
+                 </div>
+                </div>
+           </div>
+            
+                        
+                       
+                  
+                    </div>
+        <!--
+        
+    
+      
+    
+      
+    -->
+       
+    </footer>
+    
+    </body>
+   <style>
+       .box-footer
+       {
+           padding: 5px;
+       }
+       .related 
+       {
+           margin-top: 550px !important;
+       }
+       #myarrowbtns
+       {
+           position: absolute;
+           margin-top: 200px;
+           width: 100%;
+       }
+       .swiper-slide
+       {
+           background:none;
+       }
+       .cont{
+           padding:  0px;
+       }
+       .cont img{
+           margin: 0px;
+height: 180px;
+width: 300px;
+       }
+@media only screen and (max-width: 600px)
+{
+    .swiper-container
+    {
+        width: 270px !important;
+    }
+    #myarrowbtns
+       {
+           margin-top: 150px;
+
+       }
+       .swiper-button-prev
+       {
+           outline: none;
+           left: -30px;
+           cursor: pointer;
+       }
+       .swiper-button-next
+       {
+           outline: none;
+           right: -30px;
+           cursor: pointer;
+       }
+       .cont img{
+           margin: 0px;
+           margin: auto !important;
+height: 180px;
+width: 300px;
+       }
+       
+       .mt
+       {
+margin-top: -400px;
+       }
+       .rel
+       {
+           
+       }
+      
+}   
+   </style>
+   
+    </div>
+    </html>

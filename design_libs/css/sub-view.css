@@ -1,0 +1,273 @@
+.filters
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.row
+{
+    width: 95%;
+    margin: auto !important;
+}
+.type
+{
+  margin: auto ;
+  margin-top: 20px;
+}
+
+.div-type-item
+{
+    position: relative;
+    direction: rtl;
+height: 40px !important;
+width: 150px;
+background-color:#ef183a;
+    float: left;
+    text-align: center ;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px ;
+    cursor: pointer;
+}
+
+.div-type-item a
+{
+  font-size: 15px;
+text-decoration-line: none;
+color: white;
+text-align: center;
+}
+.mycheck
+{
+    margin: 0px;
+    font-size: 20px;
+   position: absolute;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+  float: right;
+  right: 7%;
+  top: 25%;
+    height: 25px;
+    
+}
+.box-in-page
+{
+    position: relative;
+   
+    height: 300px !important;
+    width: 200px !important;
+    padding: 0;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+.box-in-page div
+{
+
+    transition: linear 0.6;
+    padding: 0;
+    position: relative;
+    height:300px;
+    width: 180px !important;
+    border: none;
+   border-radius: 0px !important;
+}
+.box-in-page div img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    height:300px;
+    width: 180px !important;
+    border-radius: 20px;
+    margin: auto;
+}
+
+
+
+#select-filter
+{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+/* Reset Select */
+select {
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    
+    border: 0 !important;
+    background: #ef183a;
+    background-image: none;
+  direction: rtl;
+  text-align: center;
+   border-radius: 20px;
+   
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 3em;
+    line-height: 3;
+    background: #034282;
+    overflow: hidden;
+    border-radius: .25em;
+    border-radius: 20px;
+    
+  }
+  select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+    direction: ltr;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #034282;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: white;
+  }
+  body{
+      color:  white !important;
+  }
+  
+
+
+ 
+  
+  .video-overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.80);
+    opacity: 0;
+    transition: all ease 500ms;
+  }
+  
+  .video-overlay.open {
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+  }
+  
+  .video-overlay-close {
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 200ms;
+  }
+  
+  .video-overlay-close:hover {
+    color: #fa183d;
+  }
+  
+  .video-overlay iframe {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translateX(-10%) translateY(-50%);
+    /* width: 90%; */
+    /* height: auto; */
+    box-shadow: 0 0 15px rgba(0,0,0,0.75);
+  }
+
+  .swiper-button-next:after {
+
+font-weight: bold;
+font-size: 60px;
+margin-right: 70px;
+  }
+.swiper-button-prev:after {
+
+    font-weight: bold;
+    font-size: 60px;
+    margin-left: 70px;
+        }
+       
+ .hover-film
+        {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+         display: none;
+         top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+         opacity: 0.9;
+        }
+      
+.film-name
+{
+  position: absolute;
+  z-index: 99;
+bottom: 10%;
+  width: 100%;
+  height: 40px !important;
+  background-color: black;
+  text-align: center;
+}
+.film-rank
+{
+  position: absolute;
+  bottom: 13%;
+  right: 5%;
+  width: 70px !important;
+  height: 30px !important;
+  background-color: #424484;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box-in-page:hover .hover-film
+{
+  display: block;
+}
+.box-in-page:hover img
+{
+  transition: ease-in-out .4s;
+ border: 5px solid #ef183a;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+  .select 
+  {
+    width: 200px;
+
+  }
+
+}

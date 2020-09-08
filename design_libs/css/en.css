@@ -1,0 +1,33 @@
+.navbar-mainbg
+{
+    direction: rtl !important;
+}
+
+.ml-auto
+{
+    direction: ltr !important;
+    margin-left: 20px !important;
+}
+
+#container-search
+{
+    margin-right: 150px !important;
+}
+
+
+
+@media screen and (max-width: 600px)
+{
+    #container-search
+    {
+       
+        margin-right: 0px !important;
+    }
+    
+    #navbarSupportedContent li
+    {
+        text-align: left;
+        direction: rtl;
+    }
+}
+

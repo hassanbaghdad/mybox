@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="myhead">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYBOX</title>
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+    
+       <!--------------------------------  CSS  ------------------------------------------->
+  <link rel="stylesheet" href="design_libs/bootstrap441/css/bootstrap.min.css">
+  <link rel="stylesheet" href="design_libs/fontawesome5.13.0/css/all.css">
+  <link rel="stylesheet" href="design_libs/css/navbar-mybox2.css">
+ <link rel="stylesheet" href="design_libs/swiper/swiper.min.css">
+<link rel="stylesheet" href="design_libs/swiper/style.css">
+  <link rel="stylesheet" href="design_libs/css/edits.css">
+  <link rel="stylesheet" href="design_libs/css/player-video.css">
+  <link rel="stylesheet" href="design_libs/css/social-media-buttons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="design_libs/css/load0x07page.css">
+  <link rel="stylesheet" href="design_libs/css/films-style.css">
+        <link rel="stylesheet" href="design_libs/owl/dist/assets/owl.carousel.min.css" />
+         <link rel="stylesheet" href="design_libs/placeholder-loading/dist/css/placeholder-loading.css">
+         <link rel="stylesheet" href="design_libs/css/myfooter.css">
+         
+  <!-------------------------------  SCRIPTS  ---------------------------------------->
+  <script src="design_libs/jquery-3.4.1.min.js"></script>
+  <script src="design_libs/bootstrap441/js/bootstrap.min.js"></script>
+  <script src="design_libs/js/navbar-mybox2.js"></script>
+  <script src="design_libs/js/player-video.js"></script>
+ <script src="design_libs/js/load0x07.js"></script>
+ <script src="design_libs/js/end.js"></script>
+ <script src="design_libs/js/languages.js"></script>
+       <script src="design_libs/js/owl.js"></script>
+       <script id="owl-screen" src="design_libs/owl/dist/owl.carousel-0x07-10.js"></script>
+<script src="design_libs/js/slide-with-scale0x07.js"></script>
+
+
+   <!-- NAVBAR MYBOX2 -->
+   
+  <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+      
+      <a class="navbar-brand navbar-logo" href="#">
+          <div id="mybox">
+              <a href="#" id="wwww">
+                  MYBOX
+              </a>
+          </div>
+      </a>
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars text-white"></i>
+      </button>
+       
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <div id="container-search">
+              <button class="btn btn-search my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                <input id="searchbox" class="mr-sm-2 box-search dropdown-toggle"  type="search" placeholder="بحث" aria-label="Search"  onkeydown="resultsearch()">
+                <script>
+                    function resultsearch()
+        {
+         var search_box = document.getElementById('searchbox');
+       var search_dropdown = document.getElementById('searchdrowpdown');
+         if(search_box.text  != '')
+         {
+           
+         search_dropdown.style.display="block";
+          
+         }
+         var key = event.keyCode || event.charCode;
+       
+           if( key == 8 || key == 46 && search_box.text =='')
+          
+          {
+           search_dropdown.style.display="none";
+          }
+         
+         
+        }
+                  </script>
+                   <div id="searchdrowpdown">
+                       <ul>
+                         <li>
+                           <div class="div-img-in-search-dropdown myinline">
+                             <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                           </div>
+                         <div class="search-dropdown-title myinline">
+                           <a href="#" >LA CASA DE PAPEL</a>
+                         </div>
+                       <div class="search-dropdown-eva myinline">
+                           <span>8/10</span>
+                       </div>
+                          </li>
+                          <li>
+                           <div class="div-img-in-search-dropdown myinline">
+                             <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                           </div>
+                         <div class="search-dropdown-title myinline">
+                           <a href="#" >LA CASA DE PAPEL</a>
+                         </div>
+                       <div class="search-dropdown-eva myinline">
+                           <span>8/10</span>
+                       </div>
+                          </li>
+                          <li>
+                            <div class="div-img-in-search-dropdown myinline">
+                              <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                            </div>
+                          <div class="search-dropdown-title myinline">
+                            <a href="#" >LA CASA DE PAPEL</a>
+                          </div>
+                        <div class="search-dropdown-eva myinline">
+                            <span>8/10</span>
+                        </div>
+                           </li>
+                           <li>
+                            <div class="div-img-in-search-dropdown myinline">
+                              <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                            </div>
+                          <div class="search-dropdown-title myinline">
+                            <a href="#" >LA CASA DE PAPEL</a>
+                          </div>
+                        <div class="search-dropdown-eva myinline">
+                            <span>8/10</span>
+                        </div>
+                           </li>
+                           <li>
+                            <div class="div-img-in-search-dropdown myinline">
+                              <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                            </div>
+                          <div class="search-dropdown-title myinline">
+                            <a href="#" >LA CASA DE PAPEL</a>
+                          </div>
+                        <div class="search-dropdown-eva myinline">
+                            <span>8/10</span>
+                        </div>
+                           </li>
+                            <li>
+                           <div class="div-img-in-search-dropdown myinline">
+                             <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                           </div>
+                         <div class="search-dropdown-title myinline">
+                           <a href="#" >LA CASA DE PAPEL</a>
+                         </div>
+                       <div class="search-dropdown-eva myinline">
+                           <span>8/10</span>
+                       </div>
+                          </li>
+                                  
+                              
+                         </ul>
+                       
+                       
+                   </div>
+            </div> 
+      
+          <ul class="navbar-nav ml-auto">
+              <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                    <span class="text-home">الصفحة الرئيسية</span>
+                    <i class="fas fa-home">
+                    </i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="films.html">
+                    <span class="text-films">الافلام</span>
+                    <i class="fas fa-film"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="series.html">
+                    <span class="text-series">المسلسلات</span>
+                    <i class="fas fa-moon"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="channels.html">
+                    <span class="text-channels">القنوات</span>
+                    <i class="fas fa-tv"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="text-more">المزيد</span>
+                    <i class="fas fa-box-open"></i></a>
+            </li>
+            <li class="nav-item lang-btn">
+                <a class="nav-link li-lang" href="#">
+                    <span class="lang-text">EN</span>
+                    <i class="fas fa-language"></i></a>
+            </li>
+           
+             
+              
+          </ul>
+         
+      </div>
+     
+  </nav>
+  <!-- END NAVBAR -->
+</head>
+<body>
+   
+
+    <!--MAIN SLIDER SHOW-->
+<div id="main_slidershow">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="clip-info col-lg-2">
+                
+            </div>
+            <div class="video-title">
+        
+                <a class="video-play-button play-video btn-film1" href="#">
+                  <span></span>
+                </a>
+                
+                
+                <div id="video-overlay" class="video-overlay">
+                  <a class="video-overlay-close">&times;</a>
+                </div>
+              </div>
+            <img class="img-in-main-slider img-film1" src="images/1.jpg">
+        </div>
+        <div class="swiper-slide">
+            <div class="clip-info col-lg-2">
+                
+            </div>
+            <div class="video-title">
+        
+                <a class="video-play-button play-video btn-film2" href="#">
+                  <span></span>
+                </a>
+                
+                
+                <div id="video-overlay" class="video-overlay">
+                  <a class="video-overlay-close">&times;</a>
+                </div>
+              </div>
+            <img class="img-in-main-slider img-film2" src="images/2.jpg">
+        </div>
+    
+    </div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+    <!--END MAIN SLIDER SHOW-->
+
+    <!--SCRIPTS SWIPER-->
+    
+    <script src="design_libs/swiper/swiper.min.js"></script>
+     <script>
+     var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
+ <div class="spretor"></div>
+ <div class="container-fluid">
+             
+  <div class="row">
+    <div id="top-rated">
+        
+    <div class="films-owl-cover">
+      <div class="top-rated">
+          <a href="#">
+            <span class="text-top-rated">الافضل تقييماً</span>
+        </a>
+          <div class="mybar" id="bar-top-films"></div>
+        </div>  
+<div class="container-owl">
+<div class="owl-carousel owl-theme">
+  
+    <div class="box-in-owl item ph-item myindex2">
+        <div class="ph-picture">
+            <div class="child-info">
+                <div class="child-top-rated">
+                    <span class="text-top-rated">الافضل تقييماً</span>
+                </div>
+                <div class="child-rank">
+                    <span class="fa fa-star">
+                        8/10
+                    </span>
+                </div>
+                <div class="child-name-film">
+                    SONIC
+                </div>
+                <div class="child-play-btn">
+                    <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                        <span style="margin: 0px !important"></span>
+                    </a>
+                </div>
+              <div class="child-spretor"></div>
+            </div>
+            <img class="ph-picture" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sJRcxUYDZb7LtV8AID19hxcqvaq.jpg">
+        </div>
+        
+    </div>
+<div class="box-in-owl item ph-item myindex2">
+    <div class="ph-picture">
+        <div class="child-info">
+            <div class="child-top-rated">
+                <span class="text-top-rated">الافضل تقييماً</span>
+            </div>
+            <div class="child-rank">
+                <span class="fa fa-star">
+                    8/10
+                </span>
+            </div>
+            <div class="child-name-film">
+                1917
+            </div>
+            <div class="child-play-btn">
+                <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                    <span style="margin: 0px !important"></span>
+                </a>
+            </div>
+          <div class="child-spretor"></div>
+        </div>
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8KkyXE7Hd9MPOOkORxkMM6SUXAB.jpg">
+    </div>
+    
+</div>
+<div class="box-in-owl item ph-item myindex3">
+    <div class="ph-picture">
+        <div class="child-info">
+            <div class="child-top-rated">
+                <span class="text-top-rated">الافضل تقييماً</span>
+            </div>
+            <div class="child-rank">
+                <span class="fa fa-star">
+                    8/10
+                </span>
+            </div>
+            <div class="child-name-film">
+                PARASITA
+            </div>
+            <div class="child-play-btn">
+                <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                    <span style="margin: 0px !important"></span>
+                </a>
+            </div>
+          <div class="child-spretor"></div>
+        </div>
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg">
+    </div>
+    
+</div>
+<div class="box-in-owl item ph-item myindex4" index="4">
+    <div class="ph-picture">
+        <div class="child-info">
+            <div class="child-top-rated">
+                <span class="text-top-rated">الافضل تقييماً</span>
+            </div>
+            <div class="child-rank">
+                <span class="fa fa-star">
+                    8/10
+                </span>
+            </div>
+            <div class="child-name-film">
+                BAD BOYS
+            </div>
+            <div class="child-play-btn">
+                <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                    <span style="margin: 0px !important"></span>
+                </a>
+            </div>
+          <div class="child-spretor"></div>
+        </div>
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sTKl7J5OWnsZSTRiKPIvPx4ngBG.jpg">
+    </div>
+    
+</div>
+<div class="box-in-owl item ph-item myindex5" index="5">
+    <div class="ph-picture">
+        <div class="child-info">
+            <div class="child-top-rated">
+                <span class="text-top-rated">الافضل تقييماً</span>
+            </div>
+            <div class="child-rank">
+                <span class="fa fa-star">
+                    8/10
+                </span>
+            </div>
+            <div class="child-name-film">
+                ENTRE FACES SEOREDOS
+            </div>
+            <div class="child-play-btn">
+                <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                    <span style="margin: 0px !important"></span>
+                </a>
+            </div>
+          <div class="child-spretor"></div>
+        </div>
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/y9bPnWN7M0SmDvh4Nns0R4Jc2Jn.jpg">
+    </div>
+    
+</div>
+<div class="box-in-owl item ph-item myindex6">
+    <div class="ph-picture">
+        <div class="child-info">
+            <div class="child-top-rated">
+                <span class="text-top-rated">الافضل تقييماً</span>
+            </div>
+            <div class="child-rank">
+                <span class="fa fa-star">
+                    8/10
+                </span>
+            </div>
+            <div class="child-name-film">
+                DOIS IRMAOS
+            </div>
+            <div class="child-play-btn">
+                <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                    <span style="margin: 0px !important"></span>
+                </a>
+            </div>
+          <div class="child-spretor"></div>
+        </div>
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jsi2UM64Mhr6NmY1LKeeCuZOaCo.jpg">
+    </div>
+    
+</div>
+<div class="box-in-owl item ph-item myindex7">
+    <div class="ph-picture">
+        <div class="child-info">
+            <div class="child-top-rated">
+                <span class="text-top-rated">الافضل تقييماً</span>
+            </div>
+            <div class="child-rank">
+                <span class="fa fa-star">
+                    8/10
+                </span>
+            </div>
+            <div class="child-name-film">
+                TAKE BACK
+            </div>
+            <div class="child-play-btn">
+                <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                    <span style="margin: 0px !important"></span>
+                </a>
+            </div>
+          <div class="child-spretor"></div>
+        </div>
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aGvJ0Ny7idOtkE5696iB5ZawUc6.jpg">
+    </div>
+    
+</div>
+<div class="box-in-owl item ph-item myindex8">
+    <div class="ph-picture">
+        <div class="child-info">
+            <div class="child-top-rated">
+                <span class="text-top-rated">الافضل تقييماً</span>
+            </div>
+            <div class="child-rank">
+                <span class="fa fa-star">
+                    8/10
+                </span>
+            </div>
+            <div class="child-name-film">
+                MULAN
+            </div>
+            <div class="child-play-btn">
+                <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                    <span style="margin: 0px !important"></span>
+                </a>
+            </div>
+          <div class="child-spretor"></div>
+        </div>
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg">
+    </div>
+    
+</div>
+<div class="box-in-owl item ph-item myindex9">
+    <div class="ph-picture">
+        <div class="child-info">
+            <div class="child-top-rated">
+                <span class="text-top-rated">الافضل تقييماً</span>
+            </div>
+            <div class="child-rank">
+                <span class="fa fa-star">
+                    8/10
+                </span>
+            </div>
+            <div class="child-name-film">
+                PURGE
+            </div>
+            <div class="child-play-btn">
+                <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                    <span style="margin: 0px !important"></span>
+                </a>
+            </div>
+          <div class="child-spretor"></div>
+        </div>
+        <img  src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+    </div>
+    
+</div>
+
+  
+</div>
+
+</div>
+</div>
+  </div>
+  
+  
+</div>
+</div>
+
+<!-----------------------NEW FILMS--------------------->
+<div class="spretor"></div>
+<div class="container-fluid">
+            
+ <div class="row">
+   <div id="new-films"> 
+       
+   <div class="films-owl-cover">
+     <div class="top-rated">
+         <a href="#">
+             <span class="text-new-films">افلام جديدة</span>
+         </a>
+         <div class="mybar" id="bar-top-films"></div>
+       </div>  
+<div class="container-owl">
+<div class="owl-carousel owl-theme">
+ 
+   <div class="box-in-owl item ph-item myindex2">
+       <div class="ph-picture">
+           <div class="child-info">
+               <div class="child-top-rated">
+                <span class="text-new-films">افلام جديدة</span>
+               </div>
+               <div class="child-rank">
+                   <span class="fa fa-star">
+                       8/10
+                   </span>
+               </div>
+               <div class="child-name-film">
+                   SONIC
+               </div>
+               <div class="child-play-btn">
+                   <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                       <span style="margin: 0px !important"></span>
+                   </a>
+               </div>
+             <div class="child-spretor"></div>
+           </div>
+           <img class="ph-picture" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sJRcxUYDZb7LtV8AID19hxcqvaq.jpg">
+       </div>
+       
+   </div>
+<div class="box-in-owl item ph-item myindex2">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-new-films">افلام جديدة</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               1917
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8KkyXE7Hd9MPOOkORxkMM6SUXAB.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex3">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-new-films">افلام جديدة</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               PARASITA
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex4" index="4">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-new-films">افلام جديدة</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               BAD BOYS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sTKl7J5OWnsZSTRiKPIvPx4ngBG.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex5" index="5">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-new-films">افلام جديدة</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               ENTRE FACES SEOREDOS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/y9bPnWN7M0SmDvh4Nns0R4Jc2Jn.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex6">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-new-films">افلام جديدة</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               DOIS IRMAOS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jsi2UM64Mhr6NmY1LKeeCuZOaCo.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex7">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-new-films">افلام جديدة</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               TAKE BACK
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aGvJ0Ny7idOtkE5696iB5ZawUc6.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex8">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-new-films">افلام جديدة</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               MULAN
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex9">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-new-films">افلام جديدة</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               PURGE
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img  src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+   </div>
+   
+</div>
+
+ 
+</div>
+
+</div>
+</div>
+ </div>
+ 
+ 
+</div>
+</div>
+
+<!---------------------END NEW FILMS------------------->
+
+
+<!---------------------OSCAR FILM------------------->
+<div class="spretor"></div>
+<div class="container-fluid">
+            
+ <div class="row">
+   <div id="oscar-films"> 
+       
+   <div class="films-owl-cover">
+     <div class="top-rated">
+         <a href="#">
+             <span class="text-oscar">اوسكار</span>
+             </a>
+         <div class="mybar" id="bar-top-films"></div>
+       </div>  
+<div class="container-owl">
+<div class="owl-carousel owl-theme">
+ 
+   <div class="box-in-owl item ph-item myindex2">
+       <div class="ph-picture">
+           <div class="child-info">
+               <div class="child-top-rated">
+                 <span class="text-oscar">اوسكار</span>
+               </div>
+               <div class="child-rank">
+                   <span class="fa fa-star">
+                       8/10
+                   </span>
+               </div>
+               <div class="child-name-film">
+                   SONIC
+               </div>
+               <div class="child-play-btn">
+                   <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                       <span style="margin: 0px !important"></span>
+                   </a>
+               </div>
+             <div class="child-spretor"></div>
+           </div>
+           <img class="ph-picture" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sJRcxUYDZb7LtV8AID19hxcqvaq.jpg">
+       </div>
+       
+   </div>
+<div class="box-in-owl item ph-item myindex2">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-oscar">اوسكار</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               1917
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8KkyXE7Hd9MPOOkORxkMM6SUXAB.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex3">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-oscar">اوسكار</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               PARASITA
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex4" index="4">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-oscar">اوسكار</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               BAD BOYS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sTKl7J5OWnsZSTRiKPIvPx4ngBG.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex5" index="5">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-oscar">اوسكار</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               ENTRE FACES SEOREDOS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/y9bPnWN7M0SmDvh4Nns0R4Jc2Jn.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex6">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-oscar">اوسكار</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               DOIS IRMAOS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jsi2UM64Mhr6NmY1LKeeCuZOaCo.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex7">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-oscar">اوسكار</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               TAKE BACK
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aGvJ0Ny7idOtkE5696iB5ZawUc6.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex8">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-oscar">اوسكار</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               MULAN
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex9">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-oscar">اوسكار</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               PURGE
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img  src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+   </div>
+   
+</div>
+
+ 
+</div>
+
+</div>
+</div>
+ </div>
+ 
+ 
+</div>
+</div>
+<!------------------END OSCAR FILM----------------->
+
+<!------------------TOP RATED SERIES----------------->
+<div class="spretor"></div>
+<div class="container-fluid">
+            
+ <div class="row">
+   <div id="top-series"> 
+       
+   <div class="films-owl-cover">
+     <div class="top-rated">
+         <a href="#">
+            <span class="text-top-series">افضل المسلسلات</span>
+            </a>
+         <div class="mybar" id="bar-top-films"></div>
+       </div>  
+<div class="container-owl">
+<div class="owl-carousel owl-theme">
+ 
+   <div class="box-in-owl item ph-item myindex2">
+       <div class="ph-picture">
+           <div class="child-info">
+               <div class="child-top-rated">
+                <span class="text-top-series">افضل المسلسلات</span>
+               </div>
+               <div class="child-rank">
+                   <span class="fa fa-star">
+                       8/10
+                   </span>
+               </div>
+               <div class="child-name-film">
+                   SONIC
+               </div>
+               <div class="child-play-btn">
+                   <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                       <span style="margin: 0px !important"></span>
+                   </a>
+               </div>
+             <div class="child-spretor"></div>
+           </div>
+           <img class="ph-picture" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sJRcxUYDZb7LtV8AID19hxcqvaq.jpg">
+       </div>
+       
+   </div>
+<div class="box-in-owl item ph-item myindex2">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-top-series">افضل المسلسلات</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               1917
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/8KkyXE7Hd9MPOOkORxkMM6SUXAB.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex3">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-top-series">افضل المسلسلات</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               PARASITA
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex4" index="4">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-top-series">افضل المسلسلات</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               BAD BOYS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/sTKl7J5OWnsZSTRiKPIvPx4ngBG.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex5" index="5">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-top-series">افضل المسلسلات</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               ENTRE FACES SEOREDOS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/y9bPnWN7M0SmDvh4Nns0R4Jc2Jn.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex6">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-top-series">افضل المسلسلات</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               DOIS IRMAOS
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jsi2UM64Mhr6NmY1LKeeCuZOaCo.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex7">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-top-series">افضل المسلسلات</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               TAKE BACK
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aGvJ0Ny7idOtkE5696iB5ZawUc6.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex8">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-top-series">افضل المسلسلات</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               MULAN
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/aKx1ARwG55zZ0GpRvU2WrGrCG9o.jpg">
+   </div>
+   
+</div>
+<div class="box-in-owl item ph-item myindex9">
+   <div class="ph-picture">
+       <div class="child-info">
+           <div class="child-top-rated">
+            <span class="text-top-series">افضل المسلسلات</span>
+           </div>
+           <div class="child-rank">
+               <span class="fa fa-star">
+                   8/10
+               </span>
+           </div>
+           <div class="child-name-film">
+               PURGE
+           </div>
+           <div class="child-play-btn">
+               <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                   <span style="margin: 0px !important"></span>
+               </a>
+           </div>
+         <div class="child-spretor"></div>
+       </div>
+       <img  src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+   </div>
+   
+</div>
+
+ 
+</div>
+
+</div>
+</div>
+ </div>
+ 
+ 
+</div>
+</div>
+
+<!------------------END TOP RATED SERIES----------------->
+ 
+
+<script>
+  $(document).ready(function(){
+$('.owl-carousel').owlCarousel();
+
+
+
+/*$(window).on('resize', function(){
+
+$("#wwww").text($(window).width());
+});*/
+
+
+});
+</script>
+<link id="lang-link" rel="stylesheet" href="">
+</body>
+<footer>
+    <div id="myfooter">
+        <div class="col-xl-3 z">
+            <div class=" z contact-us">
+                <h2 > 
+                    <span class="text-contact">تواصل معنا </span>
+                             
+                     </h2>
+               </div>
+        </div>
+         
+      <div class="col-xl-3 z">
+        <div>
+                
+            <span id="mybox-footer" >MYBOX</span>
+       
+  
+</a>
+</div>
+      </div>
+            
+      <div class="col-xl-3  z">
+        <div id="social-icons">
+            <div class="box-footer">
+                <a class="a-icon" href="#"><span class="fa fa-facebook"></span></a> 
+             </div>
+             <div class="box-footer">
+                 <a class="a-icon" href="#"><span class="fa fa-instagram"></span></a>
+             </div>
+             <div class="box-footer" style="margin-bottom: 20px;">
+                 <a class="a-icon" href="#"><span class="fa fa-whatsapp"></span></a>
+             </div>
+            </div>
+       </div>
+        
+                    
+                   
+              
+                </div>
+    <!--
+    
+
+  
+
+  
+-->
+    <style>
+      
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".navbar-toggler").on("toggler",function(){
+                //$(".navbar-collapse").addClass("show");
+            })
+
+        });
+    </script>
+</footer>
+</html>

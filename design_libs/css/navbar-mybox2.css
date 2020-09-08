@@ -1,0 +1,371 @@
+
+@font-face {
+	font-family: myBoxFont;
+	src: url("../../0x07_fonts/SteelrDemo.ttf");
+  }
+
+*
+{
+   
+
+/* لتحديد الشكل الذي تريد الخط فيه تقوم باستخدام خاصية font-weight */ 
+
+font-weight: normal;
+}
+/*Bootstrap Edit*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.navbar-toggler
+{
+	background-color: #fa183d !important;
+}
+.navbar-nav i {
+	margin-right: 10px;
+}
+/*----------TEXT MYBOX------------*/
+#mybox
+{
+
+	margin-right: 50px;
+	
+}
+
+#mybox a
+{
+	font-family:myBoxFont ;
+text-decoration-line: none;
+font-size: 25px;
+color:rgb(239, 24, 58);
+font-weight: bold;
+transition: linear 0.3s;
+}
+#mybox a:hover
+{
+color: white;
+
+}
+.box-search
+{
+    border:none;
+   width: 200px;
+   
+    outline:none;
+    float:left;
+    padding: 0;
+    color: rgb(54, 9, 9);
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+  
+    border-radius: 50px;
+  text-align: center;
+}
+
+
+.btn-search
+{
+    
+    
+    height: 40px;
+    width: 40px;
+    background-color: #ef183a;
+     
+    margin-left: -40px;
+   color: white;
+ 
+  border-radius: 50%;
+}
+#container-search
+{
+	
+  margin: auto;
+margin-right: -100px;
+    border-radius: 40px;
+	padding: 10px;
+	
+}
+#container-search:hover > .box-search{
+	width: 230px;
+	
+    padding: 0 6px;
+    box-shadow: 0 1px 5px 1px rgb(231, 216, 214);
+}
+
+#searchdrowpdown
+{
+    
+    position: absolute;
+    /*background-color: #161f29;*/
+    width: 250px;
+    display: none;
+    margin-top: 2px;
+    border-radius: 10px;
+   z-index: 999;
+    padding: 5px;
+}
+.tr-tbl-search-dropdown
+{
+   
+    margin: 2px;
+  
+}
+.tr-tbl-search-dropdown td{
+    padding: 8px;
+}
+.img-in-dropdown
+{
+	margin-top: 15px;
+	
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 50%;
+    border: 2px solid #526269 ;
+}
+.search-dropdown-eva
+{
+   margin-top: -45px;
+    width: 50px;
+    margin-right: 0px;
+   float: right;
+   
+    color: #a5a5a5;
+   
+}
+.search-dropdown-img
+{
+    width: 15%;
+}
+.search-dropdown-title
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+   left: 0;
+   display: flex;
+   padding-bottom: 10px;
+   
+}
+.search-dropdown-title a
+{
+  margin-left: 10px;
+  
+  justify-content: center;
+  align-items: center;
+    text-align: center;
+    text-decoration-line: none;
+    color:  #7cb1ae;
+}
+.search-dropdown-td-title a:hover
+{
+    color: white;
+}
+.searchdrowpdown ul
+{
+    list-style: none;
+}
+#searchdrowpdown ul li
+{
+    width: 100%;
+    display: block;
+    float: left;
+   background-color: #4b2027;
+   border-radius: 50px;
+   margin: 2px;
+  position: relative;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+#searchdrowpdown ul li:hover .search-dropdown-td-title a
+{
+	color: red;
+}
+@media only screen and (max-width: 700px)
+ {
+	.btn-search
+	{
+margin-top: 0px !important;
+	}
+	#container-search
+	{
+		margin: auto;
+	}
+	#container-search:hover > .box-search{
+		width: 100%;
+		
+	}
+ }
+.btn-search:hover
+{
+    background-position: 0 0, 0 0;
+    
+    -webkit-transition-duration: 0.5s;
+       -moz-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            background-color:#85831d;
+            color: white;
+}
+
+
+
+.navbar-mainbg{
+	background-color: #5161ce;
+	padding: 0px;
+}
+#navbarSupportedContent{
+	/**@@@@**/
+	position: relative;
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+	margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 10px 10px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color: #5161ce;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 52px !important;
+	top: -2px !important;
+	
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+	
+}
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	bottom: 10px;
+	top: 52% !important;
+}
+.hori-selector .right{
+	right: -25px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5161ce;
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+
+
+.ml-auto
+{
+	text-align: right;
+	direction: rtl;
+}
+.ml-auto li
+{
+direction: ltr;
+}
+
+
+@media screen and (max-width: 600px)
+{
+	.hori-selector .right:before, .hori-selector .left:before
+	{
+		display: none !important;
+	}
+	.box-search
+	{
+		width: 100%;
+	}
+}
+@media (max-width: 991px){
+	#navbarSupportedContent ul li a{
+		padding: 12px 30px;
+	}
+	.hori-selector{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.hori-selector .left,
+	.hori-selector .right{
+		right: 10px;
+	}
+	.hori-selector .left{
+		top: -25px;
+		left: auto;
+	}
+	.hori-selector .right{
+		bottom: -25px;
+	}
+	.hori-selector .left:before{
+		left: -25px;
+		top: -25px;
+	}
+	.hori-selector .right:before{
+		bottom: -25px;
+		left: -25px;
+	}
+}

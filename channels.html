@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="myhead">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYBOX</title>
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+    
+       <!--------------------------------  CSS  ------------------------------------------->
+  <link rel="stylesheet" href="design_libs/bootstrap441/css/bootstrap.min.css">
+  <link rel="stylesheet" href="design_libs/fontawesome5.13.0/css/all.css">
+  <link rel="stylesheet" href="design_libs/css/navbar-mybox2.css">
+ <link rel="stylesheet" href="design_libs/swiper/swiper.min.css">
+<link rel="stylesheet" href="design_libs/swiper/style.css">
+  <link rel="stylesheet" href="design_libs/css/edits.css">
+  <link rel="stylesheet" href="design_libs/css/player-video.css">
+  <link rel="stylesheet" href="design_libs/css/social-media-buttons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="design_libs/css/load0x07page.css">
+  <link rel="stylesheet" href="design_libs/css/films-style.css">
+  <!---->
+  <link rel="stylesheet" href="design_libs/bootstrap441/css/bootstrap.min.css">
+        <link rel="stylesheet" href="design_libs/fontawesome5.13.0/css/all.css">
+        <link rel="stylesheet" href="design_libs/css/navbar-mybox2.css">
+       <link rel="stylesheet" href="design_libs/swiper/swiper.min.css">
+      <link rel="stylesheet" href="design_libs/swiper/style.css">
+        <link rel="stylesheet" href="design_libs/css/edits.css">
+        <link rel="stylesheet" href="design_libs/css/player-video.css">
+        <link rel="stylesheet" href="design_libs/css/social-media-buttons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="design_libs/css/load0x07page.css">
+        <link rel="stylesheet" href="design_libs/css/films-style.css">
+        <link rel="stylesheet" href="design_libs/owl/dist/assets/owl.carousel.min.css" />
+         <link rel="stylesheet" href="design_libs/placeholder-loading/dist/css/placeholder-loading.css">
+         <link rel="stylesheet" href="design_libs/css/myfooter.css">
+  <!-------------------------------  SCRIPTS  ---------------------------------------->
+  <script src="design_libs/jquery-3.4.1.min.js"></script>
+  <script src="design_libs/bootstrap441/js/bootstrap.min.js"></script>
+  <script src="design_libs/js/navbar-mybox2.js"></script>
+  <script src="design_libs/js/player-video.js"></script>
+ <script src="design_libs/js/load0x07.js"></script>
+ <script src="design_libs/js/end.js"></script>
+ <!---->
+ <script src="design_libs/jquery-3.4.1.min.js"></script>
+        <script src="design_libs/bootstrap441/js/bootstrap.min.js"></script>
+        <script src="design_libs/js/navbar-mybox2.js"></script>
+        <script src="design_libs/js/player-video.js"></script>
+       <script src="design_libs/js/load0x07.js"></script>
+       <script src="design_libs/js/owl.js"></script>
+       <script id="owl-screen" src="design_libs/owl/dist/owl.carousel-0x07-10.js"></script>
+<script src="design_libs/js/slide-with-scale0x07.js"></script>
+<script src="design_libs/js/languages.js"></script>
+
+
+   <!-- NAVBAR MYBOX2 -->
+   
+  <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+      
+      <a class="navbar-brand navbar-logo" href="#">
+          <div id="mybox">
+              <a href="#" id="wwww">
+                  MYBOX
+              </a>
+          </div>
+      </a>
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars text-white"></i>
+      </button>
+       
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         
+          <div id="container-search">
+              <button class="btn btn-search my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                <input id="searchbox" class="mr-sm-2 box-search dropdown-toggle"  type="search" placeholder="بحث" aria-label="Search"  onkeydown="resultsearch()">
+                <script>
+                    function resultsearch()
+        {
+         var search_box = document.getElementById('searchbox');
+       var search_dropdown = document.getElementById('searchdrowpdown');
+         if(search_box.text  != '')
+         {
+           
+         search_dropdown.style.display="block";
+          
+         }
+         var key = event.keyCode || event.charCode;
+       
+           if( key == 8 || key == 46 && search_box.text =='')
+          
+          {
+           search_dropdown.style.display="none";
+          }
+         
+         
+        }
+                  </script>
+                   <div id="searchdrowpdown">
+                       <ul>
+                         <li>
+                           <div class="div-img-in-search-dropdown myinline">
+                             <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                           </div>
+                         <div class="search-dropdown-title myinline">
+                           <a href="#" >LA CASA DE PAPEL</a>
+                         </div>
+                       <div class="search-dropdown-eva myinline">
+                           <span>8/10</span>
+                       </div>
+                          </li>
+                          <li>
+                           <div class="div-img-in-search-dropdown myinline">
+                             <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                           </div>
+                         <div class="search-dropdown-title myinline">
+                           <a href="#" >LA CASA DE PAPEL</a>
+                         </div>
+                       <div class="search-dropdown-eva myinline">
+                           <span>8/10</span>
+                       </div>
+                          </li>
+                          <li>
+                            <div class="div-img-in-search-dropdown myinline">
+                              <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                            </div>
+                          <div class="search-dropdown-title myinline">
+                            <a href="#" >LA CASA DE PAPEL</a>
+                          </div>
+                        <div class="search-dropdown-eva myinline">
+                            <span>8/10</span>
+                        </div>
+                           </li>
+                           <li>
+                            <div class="div-img-in-search-dropdown myinline">
+                              <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                            </div>
+                          <div class="search-dropdown-title myinline">
+                            <a href="#" >LA CASA DE PAPEL</a>
+                          </div>
+                        <div class="search-dropdown-eva myinline">
+                            <span>8/10</span>
+                        </div>
+                           </li>
+                           <li>
+                            <div class="div-img-in-search-dropdown myinline">
+                              <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                            </div>
+                          <div class="search-dropdown-title myinline">
+                            <a href="#" >LA CASA DE PAPEL</a>
+                          </div>
+                        <div class="search-dropdown-eva myinline">
+                            <span>8/10</span>
+                        </div>
+                           </li>
+                            <li>
+                           <div class="div-img-in-search-dropdown myinline">
+                             <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                           </div>
+                         <div class="search-dropdown-title myinline">
+                           <a href="#" >LA CASA DE PAPEL</a>
+                         </div>
+                       <div class="search-dropdown-eva myinline">
+                           <span>8/10</span>
+                       </div>
+                          </li>
+                                  
+                              
+                         </ul>
+                       
+                       
+                   </div>
+            </div> 
+      
+            <ul class="navbar-nav ml-auto">
+              <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                    <span class="text-home">الصفحة الرئيسية</span>
+                    <i class="fas fa-home">
+                    </i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="films.html">
+                    <span class="text-films">الافلام</span>
+                    <i class="fas fa-film"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="series.html">
+                    <span class="text-series">المسلسلات</span>
+                    <i class="fas fa-moon"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="channels.html">
+                    <span class="text-channels">القنوات</span>
+                    <i class="fas fa-tv"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span class="text-more">المزيد</span>
+                    <i class="fas fa-box-open"></i></a>
+            </li>
+            <li class="nav-item lang-btn">
+                <a class="nav-link li-lang" href="#">
+                    <span class="lang-text">EN</span>
+                    <i class="fas fa-language"></i></a>
+            </li>
+           
+             
+              
+          </ul>
+         
+      </div>
+     
+  </nav>
+  <!-- END NAVBAR -->
+</head>
+    <body>
+   
+
+      <!--MAIN SLIDER SHOW-->
+  
+      <!--END MAIN SLIDER SHOW-->
+  
+      <!--SCRIPTS SWIPER-->
+      
+      <script src="design_libs/swiper/swiper.min.js"></script>
+       <script>
+       var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      </script>
+   <div class="spretor"></div>
+   <div class="container-fluid">
+               
+    <div class="row">
+      <div id="top-rated" style="margin-top: 50px;">
+          
+      <div class="films-owl-cover">
+        <div class="top-rated">
+            <a href="#">
+              <span class="text-ch-sport">القنوات الرياضية</span>
+              </a>
+            <div class="mybar" id="bar-top-films"></div>
+          </div>  
+  <div class="container-owl">
+  <div class="owl-carousel owl-theme">
+    
+      <div class="box-in-owl ch-box-in-owl item ph-item myindex2">
+          <div class="ph-picture">
+              <div class="child-info">
+                  <div class="child-top-rated">
+                      مشاهدة
+                  </div>
+                 
+                  <div class="child-name-film">
+CHANNEL 1
+                  </div>
+                  <div class="child-play-btn">
+                      <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                          <span style="margin: 0px !important"></span>
+                      </a>
+                  </div>
+                <div class="child-spretor"></div>
+              </div>
+              <img class="ph-picture" src="images/posters/poster-sport-football.jpg">
+          </div>
+          
+      </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex2">
+      <div class="ph-picture">
+          <div class="child-info">
+              <div class="child-top-rated">
+                مشاهدة
+                            </div>
+               
+              <div class="child-name-film">
+                CHANNEL 2
+              </div>
+              <div class="child-play-btn">
+                  <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                      <span style="margin: 0px !important"></span>
+                  </a>
+              </div>
+            <div class="child-spretor"></div>
+          </div>
+          <img class="ph-picture" src="images/posters/poster-sport-football2.jpg">
+      </div>
+      
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex3">
+      <div class="ph-picture">
+          <div class="child-info">
+              <div class="child-top-rated">
+                مشاهدة
+              </div>
+               
+              <div class="child-name-film">
+                CHANNEL 3
+              </div>
+              <div class="child-play-btn">
+                  <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                      <span style="margin: 0px !important"></span>
+                  </a>
+              </div>
+            <div class="child-spretor"></div>
+          </div>
+          <img class="ph-picture" src="images/posters/poster-sport-football3.jpg">
+      </div>
+      
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex4" index="4">
+      <div class="ph-picture">
+          <div class="child-info">
+              <div class="child-top-rated">
+                مشاهدة
+              </div>
+               
+              <div class="child-name-film">
+                CHANNEL 4
+              </div>
+              <div class="child-play-btn">
+                  <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                      <span style="margin: 0px !important"></span>
+                  </a>
+              </div>
+            <div class="child-spretor"></div>
+          </div>
+          <img class="ph-picture" src="images/posters/poster-sport-football4.jpg">
+      </div>
+      
+  </div>
+
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex6">
+      <div class="ph-picture">
+          <div class="child-info">
+              <div class="child-top-rated">
+                مشاهدة
+              </div>
+               
+              <div class="child-name-film">
+                CHANNEL 5
+              </div>
+              <div class="child-play-btn">
+                  <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                      <span style="margin: 0px !important"></span>
+                  </a>
+              </div>
+            <div class="child-spretor"></div>
+          </div>
+          <img class="ph-picture" src="images/posters/poster-sport-football5.jpg">
+      </div>
+      
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex7">
+      <div class="ph-picture">
+          <div class="child-info">
+              <div class="child-top-rated">
+                مشاهدة
+              </div>
+               
+              <div class="child-name-film">
+                CHANNEL 6
+              </div>
+              <div class="child-play-btn">
+                  <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                      <span style="margin: 0px !important"></span>
+                  </a>
+              </div>
+            <div class="child-spretor"></div>
+          </div>
+          <img class="ph-picture" src="images/posters/poster-sport-football6.jpg">
+      </div>
+      
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex8">
+      <div class="ph-picture">
+          <div class="child-info">
+              <div class="child-top-rated">
+                مشاهدة
+              </div>
+               
+              <div class="child-name-film">
+                CHANNEL 7
+              </div>
+              <div class="child-play-btn">
+                  <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                      <span style="margin: 0px !important"></span>
+                  </a>
+              </div>
+            <div class="child-spretor"></div>
+          </div>
+          <img class="ph-picture" src="images/posters/poster-sport-football7.jpg">
+      </div>
+      
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex9">
+      <div class="ph-picture">
+          <div class="child-info">
+              <div class="child-top-rated">
+                مشاهدة
+              </div>
+               
+              <div class="child-name-film">
+                CHANNEL 8
+              </div>
+              <div class="child-play-btn">
+                  <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                      <span style="margin: 0px !important"></span>
+                  </a>
+              </div>
+            <div class="child-spretor"></div>
+          </div>
+          <img class="ph-picture" src="images/posters/poster-sport-football8.jpg">
+      </div>
+      
+  </div>
+  
+    
+  </div>
+  
+  </div>
+  </div>
+    </div>
+    
+    
+  </div>
+  </div>
+  
+  <!-----------------------NEW FILMS--------------------->
+  <div class="spretor"></div>
+  <div class="container-fluid">
+              
+   <div class="row">
+     <div id="new-films"> 
+         
+     <div class="films-owl-cover">
+       <div class="top-rated">
+        <a href="#">
+          <span class="text-ch-films">قنوات الافلام</span>
+          </a>
+           <div class="mybar" id="bar-top-films"></div>
+         </div>  
+  <div class="container-owl">
+  <div class="owl-carousel owl-theme">
+   
+     <div class="box-in-owl ch-box-in-owl item ph-item myindex2">
+         <div class="ph-picture">
+             <div class="child-info">
+                 <div class="child-top-rated">
+                  مشاهدة
+                 </div>
+                 
+                 <div class="child-name-film">
+                  CHANNEL 1
+                 </div>
+                 <div class="child-play-btn">
+                     <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                         <span style="margin: 0px !important"></span>
+                     </a>
+                 </div>
+               <div class="child-spretor"></div>
+             </div>
+             <img class="ph-picture" src="images/posters/w-ch-moves/terminator.png">
+         </div>
+         
+     </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex2">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+             مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 2
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-moves/maxresdefault.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex3">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              CHANNEL 3
+             </div>
+              
+             <div class="child-name-film">
+                 PARASITA
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-moves/1917-1.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex4" index="4">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+             مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 4
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-moves/spider.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex5" index="5">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+             مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 5
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-moves/gameofth.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex6">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+             مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 6
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-moves/maxresdefault-2-4-768x432.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex7">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+             مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 7
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-moves/faul.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex8">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+             مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 8
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-moves/62016122237519366-reasons-why-you-need-to-see-me-before-you-1012712.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex9">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+             مشاهدة
+             </div>
+             
+             <div class="child-name-film">
+              CHANNEL 9
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img  src="images/posters/w-ch-moves/onk-back.jpg">
+     </div>
+     
+  </div>
+  
+   
+  </div>
+  
+  </div>
+  </div>
+   </div>
+   
+   
+  </div>
+  </div>
+  
+  <!---------------------END NEW FILMS------------------->
+  
+  
+  <!---------------------OSCAR FILM------------------->
+  <div class="spretor"></div>
+  <div class="container-fluid">
+              
+   <div class="row">
+     <div id="oscar-films"> 
+         
+     <div class="films-owl-cover">
+       <div class="top-rated">
+        <a href="#">
+          <span class="text-ch-series">قنوات المسلسلات</span>
+          </a>
+           <div class="mybar" id="bar-top-films"></div>
+         </div>  
+  <div class="container-owl">
+  <div class="owl-carousel owl-theme">
+   
+     <div class="box-in-owl ch-box-in-owl item ph-item myindex2">
+         <div class="ph-picture">
+             <div class="child-info">
+                 <div class="child-top-rated">
+                   مشاهدة
+                 </div>
+                 <div class="child-rank">
+                     <span class="fa fa-star">
+                         8/10
+                     </span>
+                 </div>
+                 <div class="child-name-film">
+                  CHANNEL 1
+                 </div>
+                 <div class="child-play-btn">
+                     <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                         <span style="margin: 0px !important"></span>
+                     </a>
+                 </div>
+               <div class="child-spretor"></div>
+             </div>
+             <img class="ph-picture" src="images/posters/w-ch-ser/35326-547322517.jpg">
+         </div>
+         
+     </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex2">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 2
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-ser/7788.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex3">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 3
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-ser/Game-of-Thrones.png">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex4" index="4">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 4
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-ser/la-casa-de-papel.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex5" index="5">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 5
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-ser/valanti.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex6">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 6
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-ser/bab.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex7">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 7
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-ser/IMG_0554.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex8">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 8
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-ser/b48ee33f-9438-4eaf-92f8-7786ceec5ccd.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex9">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 9
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img  src="images/posters/w-ch-ser/64.jpg">
+     </div>
+     
+  </div>
+  
+   
+  </div>
+  
+  </div>
+  </div>
+   </div>
+   
+   
+  </div>
+  </div>
+  <!------------------END OSCAR FILM----------------->
+  
+  <!------------------TOP RATED SERIES----------------->
+  <div class="spretor"></div>
+  <div class="container-fluid">
+              
+   <div class="row">
+     <div id="top-series"> 
+         
+     <div class="films-owl-cover">
+       <div class="top-rated">
+        <a href="#">
+          <span class="text-ch-fun">قنوات الاطفال</span>
+          </a>
+           <div class="mybar" id="bar-top-films"></div>
+         </div>  
+  <div class="container-owl">
+  <div class="owl-carousel owl-theme">
+   
+  
+
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex3">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 1
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img class="ph-picture" src="images/posters/w-ch-fun/tom.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex4" index="4">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 2
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-fun/spon.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex5" index="5">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 3
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-fun/121-210809-heather-north-scoobydoo-daphne_700x400.jpeg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex6">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 4
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-fun/woody.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex7">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 5
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-fun/53.png">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex8">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 6
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img src="images/posters/w-ch-fun/screen-6.jpg">
+     </div>
+     
+  </div>
+  <div class="box-in-owl ch-box-in-owl item ph-item myindex9">
+     <div class="ph-picture">
+         <div class="child-info">
+             <div class="child-top-rated">
+              مشاهدة
+             </div>
+              
+             <div class="child-name-film">
+              CHANNEL 7
+             </div>
+             <div class="child-play-btn">
+                 <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-series.html">
+                     <span style="margin: 0px !important"></span>
+                 </a>
+             </div>
+           <div class="child-spretor"></div>
+         </div>
+         <img  src="images/posters/w-ch-fun/main-2-857x480.jpg">
+     </div>
+     
+  </div>
+  
+   
+  </div>
+  
+  </div>
+  </div>
+   </div>
+   
+   
+  </div>
+  </div>
+  
+  <!------------------END TOP RATED SERIES----------------->
+   
+  
+  <script>
+    $(document).ready(function(){
+  $('.owl-carousel').owlCarousel();
+  
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+      //$('.container-owl').fadeIn();
+    } else {
+      //$('.container-owl').fadeOut();
+    }
+  });
+  });
+  </script>
+  </body>
+  <footer>
+    <div id="myfooter" style="margin-bottom: 0px;">
+        <div class="col-xl-3 z">
+            <div class=" z contact-us">
+                <h2  >     <span class="text-contact">تواصل معنا </span>        </h2>
+               </div>
+        </div>
+         
+      <div class="col-xl-3 z">
+        <div>
+                
+            <span id="mybox-footer" >MYBOX</span>
+       
+  
+</a>
+</div>
+      </div>
+            
+      <div class="col-xl-3  z">
+        <div id="social-icons">
+            <div class="box-footer">
+                <a class="a-icon" href="#"><span class="fa fa-facebook"></span></a> 
+             </div>
+             <div class="box-footer">
+                 <a class="a-icon" href="#"><span class="fa fa-instagram"></span></a>
+             </div>
+             <div class="box-footer" style="margin-bottom: 20px;">
+                 <a class="a-icon" href="#"><span class="fa fa-whatsapp"></span></a>
+             </div>
+            </div>
+       </div>
+        
+                    
+                   
+              
+                </div>
+    <!--
+    
+
+  
+
+  
+-->
+   
+</footer>
+<link id="lang-link" rel="stylesheet" href="">
+  <style>
+    .owl-dots.disabled
+    {
+      display: block !important;
+    }
+
+    .films-owl-cover
+{
+  opacity: 1 !important;
+}
+
+#top-rated
+{
+  background-image: url("images/bg-sport.jpg");
+}
+.ph-picture
+{
+  width: 100% !important;
+}
+.ch-box-in-owl
+{
+  width: 400px;
+  height: 250px;
+}
+
+.child-play-btn
+{
+  right: 37% !important;
+  top: 30% !important;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+  .ch-box-in-owl
+  {
+    height: 200px !important;
+    margin: 10px auto;
+  }
+  .row
+  {
+    height: 350px !important;
+  }
+  #myfooter
+  {
+    height: 250px !important;
+  }
+}
+  </style>
+  <script>
+    $(document).ready(function(){
+$(".owl-nav").removeAttr("disabled");
+    });
+  </script>
+</body>
+</html>

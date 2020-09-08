@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&subset=arabic');
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700&subset=arabic');
+
+
+*
+{
+    font-family: 'Cairo';
+
+font-weight: normal;
+}
+
+/** EDIT BG COLOR NAVBAR **/
+.navbar-mainbg
+{
+
+    background-color:#0b0c10;
+
+}
+
+.hori-selector .right:before, .hori-selector .left:before
+{
+    background-color:#0b0c10;
+}
+/** END BG COLOR NAVBAR **/
+
+/** SELECTOR IN NAVBAR **/
+.hori-selector , .hori-selector .right , .hori-selector .left
+{
+    background-color:#ef183a;
+}
+
+#navbarSupportedContent>ul>li.active>a
+{
+    color: white;
+}
+/** END SELECTOR IN NAVBAR**/
+
+
+/*** ICONS IN NAVBAR ***/
+.navbar-nav i
+{
+    margin-left: 10px;
+}
+/*** END ICONS IN NAVABR ***/
+
+/**** BODY ****/
+body
+{
+    background-color: rgb(0, 3, 12);
+    height: 100%;
+}
+/**** END BODY ****/
+
+
+

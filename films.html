@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MYBOX</title>
+        <!--------------------------------  CSS  ------------------------------------------->
+        <link rel="stylesheet" href="design_libs/bootstrap441/css/bootstrap.min.css">
+        <link rel="stylesheet" href="design_libs/fontawesome5.13.0/css/all.css">
+        <link rel="stylesheet" href="design_libs/css/navbar-mybox2.css">
+       <link rel="stylesheet" href="design_libs/swiper/swiper.min.css">
+      <link rel="stylesheet" href="design_libs/swiper/style.css">
+        <link rel="stylesheet" href="design_libs/css/edits.css">
+        <link rel="stylesheet" href="design_libs/css/player-video.css">
+        <link rel="stylesheet" href="design_libs/css/social-media-buttons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="design_libs/css/load0x07page.css">
+        <link rel="stylesheet" href="design_libs/css/films-style.css">
+        <link rel="stylesheet" href="design_libs/owl/dist/assets/owl.carousel.min.css" />
+         <link rel="stylesheet" href="design_libs/placeholder-loading/dist/css/placeholder-loading.css">
+         <link rel="stylesheet" href="design_libs/css/sub-view.css">
+         <link rel="stylesheet" href="design_libs/css/myfooter.css">
+         <link rel="stylesheet" href="design_libs/css/shine-btn.css">
+        <!-------------------------------  SCRIPTS  ---------------------------------------->
+        <script src="design_libs/jquery-3.4.1.min.js"></script>
+        <script src="design_libs/bootstrap441/js/bootstrap.min.js"></script>
+        <script src="design_libs/js/navbar-mybox2.js"></script>
+        <script src="design_libs/js/player-video.js"></script>
+       <script src="design_libs/js/load0x07.js"></script>
+       <script src="design_libs/js/owl.js"></script>
+       <script id="owl-screen" src="design_libs/owl/dist/owl.carousel-0x07-3.js"></script>
+     <script src="design_libs/js/films-types-filter.js"></script>
+     <script src="design_libs/js/end.js"></script>
+     
+      
+      
+         <!-- NAVBAR MYBOX2 -->
+         
+         <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+      
+            <a class="navbar-brand navbar-logo" href="#">
+                <div id="mybox">
+                    <a href="#">
+                        MYBOX
+                    </a>
+                </div>
+            </a>
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+            </button>
+             
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <div id="container-search">
+                    <button class="btn btn-search my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                      <input id="searchbox" class="mr-sm-2 box-search dropdown-toggle"  type="search" placeholder="بحث" aria-label="Search"  onkeydown="resultsearch()">
+                      <script>
+                          function resultsearch()
+              {
+               var search_box = document.getElementById('searchbox');
+             var search_dropdown = document.getElementById('searchdrowpdown');
+               if(search_box.text  != '')
+               {
+                 
+               search_dropdown.style.display="block";
+                
+               }
+               var key = event.keyCode || event.charCode;
+             
+                 if( key == 8 || key == 46 && search_box.text =='')
+                
+                {
+                 search_dropdown.style.display="none";
+                }
+               
+               
+              }
+                        </script>
+                         <div id="searchdrowpdown">
+                             <ul>
+                               <li>
+                                 <div class="div-img-in-search-dropdown myinline">
+                                   <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                 </div>
+                               <div class="search-dropdown-title myinline">
+                                 <a href="#" >LA CASA DE PAPEL</a>
+                               </div>
+                             <div class="search-dropdown-eva myinline">
+                                 <span>8/10</span>
+                             </div>
+                                </li>
+                                <li>
+                                 <div class="div-img-in-search-dropdown myinline">
+                                   <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                 </div>
+                               <div class="search-dropdown-title myinline">
+                                 <a href="#" >LA CASA DE PAPEL</a>
+                               </div>
+                             <div class="search-dropdown-eva myinline">
+                                 <span>8/10</span>
+                             </div>
+                                </li>
+                                <li>
+                                  <div class="div-img-in-search-dropdown myinline">
+                                    <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                  </div>
+                                <div class="search-dropdown-title myinline">
+                                  <a href="#" >LA CASA DE PAPEL</a>
+                                </div>
+                              <div class="search-dropdown-eva myinline">
+                                  <span>8/10</span>
+                              </div>
+                                 </li>
+                                 <li>
+                                  <div class="div-img-in-search-dropdown myinline">
+                                    <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                  </div>
+                                <div class="search-dropdown-title myinline">
+                                  <a href="#" >LA CASA DE PAPEL</a>
+                                </div>
+                              <div class="search-dropdown-eva myinline">
+                                  <span>8/10</span>
+                              </div>
+                                 </li>
+                                 <li>
+                                  <div class="div-img-in-search-dropdown myinline">
+                                    <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                  </div>
+                                <div class="search-dropdown-title myinline">
+                                  <a href="#" >LA CASA DE PAPEL</a>
+                                </div>
+                              <div class="search-dropdown-eva myinline">
+                                  <span>8/10</span>
+                              </div>
+                                 </li>
+                                  <li>
+                                 <div class="div-img-in-search-dropdown myinline">
+                                   <img class="img-in-dropdown" src="images/splah_in_search_menu.png" alt="">
+                                 </div>
+                               <div class="search-dropdown-title myinline">
+                                 <a href="#" >LA CASA DE PAPEL</a>
+                               </div>
+                             <div class="search-dropdown-eva myinline">
+                                 <span>8/10</span>
+                             </div>
+                                </li>
+                                        
+                                    
+                               </ul>
+                             
+                             
+                         </div>
+                  </div> 
+          
+                  <ul class="navbar-nav ml-auto">
+                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                    <li class="nav-item">
+                      <a class="nav-link " href="index.html">
+                          <span class="text-home">الصفحة الرئيسية</span>
+                          <i class="fas fa-home">
+                          </i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="films.html">
+                          <span class="text-films">الافلام</span>
+                          <i class="fas fa-film"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="series.html">
+                          <span class="text-series">المسلسلات</span>
+                          <i class="fas fa-moon"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="channels.html">
+                          <span class="text-channels">القنوات</span>
+                          <i class="fas fa-tv"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          <span class="text-more">المزيد</span>
+                          <i class="fas fa-box-open"></i></a>
+                  </li>
+                  <li class="nav-item lang-btn">
+                      <a class="nav-link li-lang" href="#">
+                          <span class="lang-text">EN</span>
+                          <i class="fas fa-language"></i></a>
+                  </li>
+                 
+                   
+                    
+                </ul>
+               
+            </div>
+           
+        </nav>
+        <!-- END NAVBAR -->
+    </head>
+<body>
+    <div class="bord" style="width: 90%;height: 282px;background-color: #18191e;margin: auto;border-radius: 15px;margin-bottom: 20px;">
+    <ul style="list-style: none;width: 50%;margin: auto;margin-bottom: 100px;">
+        <li style="float: right;margin:auto;margin-left: 30px;">
+            <div id="select-filter">
+                <div class="select">
+                    <select name="slct" id="slct">
+                      <option selected disabled class="filtervideolang">
+                        لغة الفيديو
+                    </option>
+                      <option value="1"> Arabic</option>
+                      <option value="2"> English</option>
+                      <option value="3"> Hindi</option>
+                      <option value="4"> Korea</option>
+                      <option value="5"> Japan</option>
+                      <option value="6"> Espaneol</option>
+                      
+                      
+                    </select>
+                  </div>
+            </div>
+        </li>
+        <li style="float: right;margin:auto;">
+            <div id="select-filter">
+                <div class="select">
+                    <select name="slct" id="slct">
+                      <option selected disabled class="filter-by-rated"> حسب المشاهدة</option>
+                      <option value="1" class="filter-top-rated">الاكثر تقييماً</option>
+                      <option value="2" class="filter-top-watches"> الاكثر مشاهدة</option>
+                      
+                    </select>
+                  </div>
+            </div>
+        </li>
+    </ul>
+    
+    <br>
+    <br>
+    <br>
+    <div id="myarrowbtns">
+        <div style="position: relative;">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+       
+    </div>
+    
+    <div class="swiper-container" id="container2">
+        <!-- Add Arrows -->
+   
+        <div class="swiper-wrapper">
+    
+            <div class="swiper-slide">
+                <div class="div-type-item btn-shine" id="div-action">
+                    <span class="fa fa-none mycheck" id="action" mychecked="false"></span>
+                    <a href="#">
+                        <span class="text-action">اكشن</span>
+                        </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class=" div-type-item btn-shine" id="div-comydia">
+                    <span class="fa fa-none mycheck" id="comydia" mychecked="false"></span>
+                    <a href="#">
+                        <span class="text-comedy">كوميديا</span>
+                        </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class=" div-type-item btn-shine" id="div-romancy">
+                    <span class="fa fa-none mycheck" id="romancy" mychecked="false"></span>
+                    <a href="#">
+                        <span class="text-romancy">رومانسي</span>
+                        </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class=" div-type-item btn-shine" id="div-warror">
+                    <span class="fa fa-none mycheck" id="warror" mychecked="false"></span>
+                    <a href="#">
+                        <span class="text-warror">رعب</span>
+                        </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class=" div-type-item btn-shine" id="div-documention">
+                    <span class="fa fa-none mycheck" id="documention" mychecked="false"></span>
+                    <a href="#">
+                        <span class="text-documention">اكشن</span>
+                        </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class=" div-type-item btn-shine" id="div-sport">
+                    <span class="fa fa-none mycheck" id="sport" mychecked="false"></span>
+                    <a href="#">
+                        <span class="text-sport">رياضة</span>
+                        </a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class=" div-type-item btn-shine" id="div-animation">
+                    <span class="fa fa-none mycheck" id="animation" mychecked="false"></span>
+                    <a href="#">
+                        <span class="text-anime" style="white-space: nowrap;">رسوم متحركة</span>
+                        </a>
+                   
+                </div>
+            </div>
+        </div>
+   
+   </div>
+   </div>
+    <div class="container-fluid" style="margin-top: 100px;padding-right: 50px;">
+        <div class="row" >
+            
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+            <div class=" box-in-page film1    col-lg-2 col-md-4 col-sm-4 col-xl-2">
+                <div class="ph-item">
+                <div class=" ph-picture">
+                    <div class="hover-film">
+                        <div class="playbtn">
+                            <a class="video-play-button play-video btn-film1" style="padding: 3px !important;" href="view-film.html">
+                                <span style="margin: 0px !important"></span>
+                            </a>
+                        </div>
+                        <span class="film-rank">
+                            8\10
+                        </span>
+                        <div class="film-name">
+                            LA CASA DE PAPEL
+                        </div>
+                    </div>
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/mHPbtCNZIm5Cx05VFuHXxqI9cns.jpg">
+                </div>
+            </div>
+            </div>
+       
+        
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+  
+    
+  
+</div>
+
+
+
+</div>
+        </div>
+    
+        
+        
+          <script>
+              $(document).ready(function(){
+  $('.owl-carousel').owlCarousel();
+});
+          </script>
+    <footer>
+        <div id="myfooter" style="margin-bottom: 0px;">
+            <div class="col-xl-3 z">
+                <div class=" z contact-us">
+                    <h2 > 
+                        <span class="text-contact">تواصل معنا </span>
+                                 
+                         </h2>
+                   </div>
+            </div>
+             
+          <div class="col-xl-3 z">
+            <div>
+                    
+                <span id="mybox-footer" >MYBOX</span>
+           
+      
+    </a>
+    </div>
+          </div>
+                
+          <div class="col-xl-3  z">
+            <div id="social-icons">
+                <div class="box-footer">
+                    <a class="a-icon" href="#"><span class="fa fa-facebook"></span></a> 
+                 </div>
+                 <div class="box-footer">
+                     <a class="a-icon" href="#"><span class="fa fa-instagram"></span></a>
+                 </div>
+                 <div class="box-footer" style="margin-bottom: 20px;">
+                     <a class="a-icon" href="#"><span class="fa fa-whatsapp"></span></a>
+                 </div>
+                </div>
+           </div>
+            
+                        
+                       
+                  
+                    </div>
+        <!--
+        
+    
+      
+    
+      
+    -->
+       
+    </footer>
+    <link id="lang-link" rel="stylesheet" href="">
+</body>
+
+<style>
+    html, body {
+height: 100%;
+
+        }
+
+        
+
+
+</style>
+<style>
+    #myarrowbtns
+    {
+        position: relative;
+        padding: 20px;
+        height: 60px;
+        
+        margin-top: 80px;
+        position: absolute;
+        width: 90%;
+    }
+    .owl-nav
+    {
+        width: 100%;
+    }
+    .swiper-button-next
+    {
+      background-image: none !important;
+     right: -30px;
+     outline: none;
+    }
+    .swiper-button-prev
+    {
+      background-image: none !important;
+      left: -30px;
+      outline: none;
+    }
+    
+    .swiper-container {
+      width: 80% !important;
+      height: 150px !important;
+      padding: 50px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      cursor: pointer;
+    margin-top: 0px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    @media only screen and (max-width: 600px)
+{
+    .bord
+    {
+        height: 350px !important;
+    }
+    #myarrowbtns
+    {
+        margin-top: 180px;
+    }
+    .swiper-container
+    {
+        margin-top: -150px;
+    }
+   .container-fluid
+   {
+      
+   }
+}
+    
+  </style>
+  <script src="design_libs/swiper/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+      var mywidth = $(window).width();
+  var myitems = 0;
+      if(mywidth > 1200)
+{
+  myitems = 7;
+}
+if(mywidth >  1200 && mywidth < 1400)
+{
+  myitems =7;
+}
+if(mywidth <  1000 && mywidth > 800)
+{
+myitems=5;
+}
+if(mywidth < 800 && mywidth > 600)
+{
+myitems=3;
+}
+if(mywidth <  600 )
+{
+ myitems=1;
+}
+var swiper = new Swiper('.swiper-container', {
+      slidesPerView: myitems,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+    $(window).on("resize",function(){
+      var mywidth = $(window).width();
+     
+      if(mywidth > 1200)
+{
+  myitems = 7;
+}
+if(mywidth >  1200 && mywidth < 1400)
+{
+  myitems =7;
+}
+if(mywidth <  1000 && mywidth > 800)
+{
+myitems=4;
+}
+if(mywidth < 800 && mywidth > 600)
+{
+myitems=3;
+}
+if(mywidth <  600 )
+{
+ myitems=1;
+}
+var swiper = new Swiper('.swiper-container', {
+      slidesPerView: myitems,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+});
+
+    
+ </script>
+ <script src="design_libs/js/languages.js"></script>
+</html>
